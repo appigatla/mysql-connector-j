@@ -123,6 +123,7 @@ public enum PropertyKey {
     exceptionInterceptors("exceptionInterceptors", true), //
     explainSlowQueries("explainSlowQueries", true), //
     failOverReadOnly("failOverReadOnly", true), //
+    failoverToReadWrite("failoverToReadWrite", false), //
     fallbackToSystemKeyStore("fallbackToSystemKeyStore", true), //
     fallbackToSystemTrustStore("fallbackToSystemTrustStore", true), //
     functionsNeverReturnBlobs("functionsNeverReturnBlobs", true), //

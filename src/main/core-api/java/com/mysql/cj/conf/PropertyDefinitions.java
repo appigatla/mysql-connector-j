@@ -566,6 +566,9 @@ public class PropertyDefinitions {
                 new BooleanPropertyDefinition(PropertyKey.failOverReadOnly, DEFAULT_VALUE_TRUE, RUNTIME_MODIFIABLE,
                         Messages.getString("ConnectionProperties.failoverReadOnly"), "3.0.12", CATEGORY_HA, 2),
 
+                new BooleanPropertyDefinition(PropertyKey.failoverToReadWrite, DEFAULT_VALUE_TRUE, RUNTIME_MODIFIABLE,
+                        Messages.getString("ConnectionProperties.failoverToReadWrite"), "8.0.26", CATEGORY_HA, 2),
+
                 new IntegerPropertyDefinition(PropertyKey.initialTimeout, 2, RUNTIME_NOT_MODIFIABLE, Messages.getString("ConnectionProperties.initialTimeout"),
                         "1.1", CATEGORY_HA, 5, 1, Integer.MAX_VALUE),
 
