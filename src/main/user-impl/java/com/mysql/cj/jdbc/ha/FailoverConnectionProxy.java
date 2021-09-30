@@ -171,7 +171,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
                 return true;
             }
 
-            if (failoverToReadWrite && sqlState.startsWith("1290") && sqlState.indexOf("--read-only") != -1) {
+            if (failoverToReadWrite && sqlState.startsWith("HY000")) {
                 // connection error
                 return true;
             }
